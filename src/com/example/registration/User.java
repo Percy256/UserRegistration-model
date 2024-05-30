@@ -1,12 +1,16 @@
+package com.example.registration;
+
+import java.util.Date;
+
 public class User {
     private String firstName;
     private String lastName;
     private String username;
-    private String dateOfBirth;
+    private Date dateOfBirth;
 
     // Constructor to initialize a User object with first name, last name, username,
     // and date of birth
-    public User(String firstName, String lastName, String username, String dateOfBirth) {
+    public User(String firstName, String lastName, String username, Date dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
@@ -29,7 +33,7 @@ public class User {
     }
 
     // Getter method to retrieve the date of birth of the user
-    public String getDateOfBirth() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
